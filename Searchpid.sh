@@ -72,5 +72,5 @@ PIDS=$(mount | grep -E "\/proc\/([0-9]{1,4})" | awk '{ print $3 }' | sed 's/\/pr
 
 for pid in $PIDS
 do
-        findPid $pid
+        getPid $pid
 done
